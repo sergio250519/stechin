@@ -813,22 +813,28 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" action="envoyer.php" method="POST">
+                <form class="contact-form">
+                    <form id="form-contact" class="my-form" action="envoyer.php" method="POST" onsubmit="return validateform">
                         <div class="form-group">
-                            <label for="name">Nom complet</label>
-                            <input type="text" id="name" name="Nom complet" class="form-control" required>
+                                     <form action="https://formsubmit.co/stechinfo25@gmail.com" méthode="POST">
+            <!-- champs cachés pour configurer la redirection -->
+             <input type="hidden" name="_captcha" value="false">
+             <input type="hidden" name="_next" value="https://stechinfo.github.io/stechin/merci.html">
+
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="Email" class="form-control" required>
+                            <input type="email" id="email" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Téléphone</label>
-                            <input type="tel" id="phone" name="Téléphone" class="form-control">
+                            <input type="tel" id="phone" class="form-control">
                         </div>
                         <div class="form-group">
                             <label for="service">Service demandé</label>
-                            <select id="service" name="Service demandé" class="form-control">
+                            <select id="service" class="form-control">
                                 <option value="">Sélectionnez un service</option>
                                 <option value="maintenance">Maintenance informatique</option>
                                 <option value="reseau">Réseau informatique</option>
@@ -837,7 +843,7 @@
                                 <option value="antennes">Antennes paraboliques</option>
                                 <option value="reparation">Réparation de téléphones</option>
                                 <option value="vente">Achat de produits</option>
-                                <option value="autre">Autre</option>
+                                <option value="autre">Autres</option>
                             </select>
                         </div>
                         <div class="form-group">

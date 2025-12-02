@@ -768,6 +768,7 @@
     <section id="contact">
         <div class="container">
             <h2 class="section-title">Contactez-nous</h2>
+                    <form action="https://formspree.io/stechinfo25@gmail.com" method="POST">
             <div class="contact-container">
                 <div class="contact-info">
                     <h3>Prenez Rendez-vous</h3>
@@ -813,8 +814,9 @@
                         </div>
                     </div>
                 </div>
-                <form id="contact-form" class="my-form" action="envoyer.php" method="POST" onsubmit="return validateform()">
-                        <div class="form-group">
+                <div class="contact-form">
+                    <form id="form-contact">
+                        <div class="form-group"> 
 
                             <label for="name">Nom Complet</label>
                             <input type="text" id="name" class="form-control" required>

@@ -813,13 +813,8 @@
                         </div>
                     </div>
                 </div>
-                <form class="contact-form">
-                    <form id="form-contact" class="my-form" action="envoyer.php" method="POST" onsubmit="return validateform">
+                <form id="contact-form" class="my-form" action="envoyer.php" method="POST" onsubmit="return validateform()">
                         <div class="form-group">
-                                     <form action="https://formsubmit.co/stechinfo25@gmail.com" méthode="POST">
-            <!-- champs cachés pour configurer la redirection -->
-             <input type="hidden" name="_captcha" value="false">
-             <input type="hidden" name="_next" value="https://stechinfo.github.io/stechin/merci.html">
 
                             <label for="name">Nom Complet</label>
                             <input type="text" id="name" class="form-control" required>

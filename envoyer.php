@@ -1,21 +1,17 @@
 <?php
-// Récupération des données
 $nom = $_POST['Nom complet'];
 $email = $_POST['Email'];
 $téléphone = $_POST['Téléphone'];
 $servicedemandé = $_POST[ 'Service demandé' ];
 $message = $_POST['message'];
-
 // Protection contre les injections
 $nom = htmlspecialchars($nom);
 $email = htmlspecialchars($email);
 $téléphone = htmlspecialchars($téléphone);
 $servicedemandé = htmlspecialchars($servicedemandé);
 $message = htmlspecialchars($message);
-
 // Votre adresse email (À CHANGER)
 $votre_email = "stechinfo25@gmail.com"; // <-- METTEZ VOTRE EMAIL ICI
-
 // Construction de l'email
 $to = $votre_email;
 $subject = "Nouveau message: " . $servicedemandé;
